@@ -8,5 +8,6 @@ import org.springframework.data.repository.CrudRepository;
  * @ Date       ：Created in 14:15 2018/7/25
  */
 public interface UserRepository extends CrudRepository<User,Long> {
+    User findByName(String userName);
 
 }
